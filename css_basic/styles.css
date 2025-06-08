@@ -1,0 +1,34 @@
+/* Make <body> a flex container with vertical stacking */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Fill the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Make <main> a flex container with horizontal stacking */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Allow main to grow and shrink as needed */
+}
+
+/* <article> should take 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 1em;
+}
+
+/* <aside> should take 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 1em;
+}
+
+/* Optional: make header and footer visually consistent */
+header, footer {
+  background-color: #f0f0f0;
+  padding: 1em;
+}
