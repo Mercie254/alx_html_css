@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.what-we-do {
+  padding: 4rem 1rem;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.feature {
+  max-width: 150px;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

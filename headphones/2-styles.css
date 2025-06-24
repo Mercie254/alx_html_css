@@ -1,0 +1,104 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* === OUR RESULTS SECTION === */
+.results-section {
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url("/headphones/Images/headphones_hero_2.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 4rem 1rem;
+  color: white;
+  width: 100vw;
+  height: 100vh;                    /* Full screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Optional container class to keep layout centered */
+.results-section .container {
+  width: 100%;
+  max-width: none;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section title */
+.results-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Description text */
+.results-section .description {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Grid of result boxes */
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual pentagon result box */
+.result-box {
+  background-color: #ff4d5a;
+  width: 120px;
+  height: 120px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+}
+
+.result-box strong {
+  font-size: 1.4rem;
+}
+
+.result-box span {
+  font-size: 0.7rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .results-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-box {
+    width: 100px;
+    height: 100px;
+  }
+}

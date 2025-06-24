@@ -1,0 +1,74 @@
+/* === FOOTER === */
+.footer {
+  background-color: #0f0f1c;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left logo section */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  height: 32px;
+}
+
+.footer-brand {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Center copyright */
+.footer-center {
+  text-align: center;
+  flex: 1;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Right social icons */
+.footer-right a {
+  background-color: white;
+  color: #0f0f1c;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.footer-right a:hover {
+  background-color: #ff4d5a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+  }
+}
+
